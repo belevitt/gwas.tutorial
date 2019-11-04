@@ -20,13 +20,17 @@ principle_components="PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+PC11+PC12+PC13+PC
 #Enter where you want your results to be saved
 output_wd="/ifs/sec/cpc/addhealth/users/belevitt/datamanagement/toydataset/testrun"
 
+#Enter where you put the SUGEN file
+software="/ifs/sec/cpc/addhealth/apps/bin/SUGEN"
+
+#Enter where you put the chromosome VCF files
+dir_vcf="/ifs/sec/cpc/addhealth/users/belevitt/datamanagement/toydataset/testrun
+
 #############################################################################################################
 #############################################################################################################
 #############################################################################################################
 
-software="/ifs/sec/cpc/addhealth/apps/bin/SUGEN"
 chrs=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22")
-dir_vcf="/ifs/sec/cpc/addhealth/users/belevitt/datamanagement/toydataset/testrun"
 id_col="sample"
 fam_col="gfam"
 quant_formulae=("${outcome_variable}=${principle_components}+${covariate_variable}")
